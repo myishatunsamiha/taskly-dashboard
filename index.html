@@ -20,8 +20,8 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div class="bg-[#F6F7FB] col-span-1 md:col-span-2 lg:col-span-1 p-4 md:px-16 lg:p-4">
             <div class="flex flex-row items-start mb-16">
-                <img src="images/Logo.png" alt="logo">
-                <p style="font-size: 1.257rem;" class="font-bold pl-3" style="width:30.01px; height:31.6px;">taskly</p>
+                <img src="images/Logo.png" alt="logo" style=" width: min(8vw, 30.01px);">
+                <p class="font-bold pl-3 text-base sm:text-lg lg:text-xl">taskly</p>
             </div>
 
             <div class="mb-16">
@@ -32,11 +32,12 @@
 
                 <div class="bg-white rounded-2xl p-6 mb-5">
                     <div class="flex flex-row items-start">
-                        <img src="images/call-doctor.png" alt="call doctor">
+                        <img src="images/call-doctor.png" alt="call doctor" style=" width: min(10vw, 45px);">
                         <div class="ml-8">
                             <p class="font-bold text-lg xl:text-2xl">Call doctor for tests</p>
                             <p class="font-medium mb-5 text-base">15 Mar 2022 - 9:00 AM</p>
-                            <button class="font-bold text-white bg-[#F4B860] px-4 py-1 rounded-full mb-5"
+                            <button
+                                class="font-bold text-white bg-[#F4B860] px-4 py-1 rounded-full mb-5 hover:bg-[#a0660f] hover:shadow-lg"
                                 style="font-size:0.75rem;">Personal</button>
                             <p class="font-normal text-sm text-[#2C2543]">Ask for blood tests and GYM
                                 certificate.</p>
@@ -46,7 +47,7 @@
 
                 <div class="bg-white rounded-2xl p-6">
                     <div class="flex flex-row items-start">
-                        <img src="images/new-weekly-pin.png" alt="call doctor">
+                        <img src="images/new-weekly-pin.png" alt="call doctor" style=" width: min(10vw, 45px);">
                         <div class="ml-8">
                             <p class="font-bold text-lg">Add new weekly pin</p>
                         </div>
@@ -63,7 +64,61 @@
                     <p class="text-[#F4B860] text-[12px] xl:text-sm font-bold">Two weeks</p>
                 </div>
 
-                <img src="images/Calendar.png" alt="calendar" style="height: min(100vh, 175px);" class="mx-auto ">
+                <div class="grid grid-cols-7 justify-items-center p-[30px] bg-white rounded-[20px]">
+                    <div class="flex flex-col items-center">
+                        <p class="text-[#F4B860] font-bold text-[12px] mb-[20px]">Mon</p>
+                        <p class="text-[#667180] opacity-40 font-medium text-[14px] mb-[40px]">1</p>
+                        <p class="text-[#2C2543] font-medium text-[14px] mb-[10px]">8</p>
+                        <div class="bg-[#F8D57E] w-1 h-1 rounded-full"></div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <p class="text-[#F4B860] font-bold text-[12px] mb-[20px]">Tue</p>
+                        <p class="text-[#2C2543] font-medium text-[14px] mb-[10px]">2</p>
+                        <div class="bg-[#F8D57E] w-1 h-1 rounded-full mb-[26px]"></div>
+                        <p class="text-[#2C2543] font-medium text-[14px] mb-[10px]">9</p>
+                        <div class="bg-[#F8D57E] w-1 h-1 rounded-full"></div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <p class="text-[#F4B860] font-bold text-[12px] mb-[20px]">Wed</p>
+                        <p class="text-[#2C2543] font-medium text-[14px] mb-[10px]">3</p>
+                        <div class="bg-[#F8D57E] w-1 h-1 rounded-full mb-[26px]"></div>
+                        <p class="text-[#667180] opacity-40 font-medium text-[14px] mb-[10px]">10</p>
+                        <div class="bg-[#F8D57E] w-1 h-1 rounded-full"></div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <p class="text-[#F4B860] font-bold text-[12px] mb-[20px]">Thu</p>
+                        <p class="text-[#2C2543] font-medium text-[14px] mb-[10px]">4</p>
+                        <div class="bg-[#F8D57E] w-1 h-1 rounded-full mb-[26px] sm:mb-[16px]"></div>
+                        <div
+                            class="bg-[#F8D57E] w-[28px] h-[28px] sm:w-[39px] sm:h-[39px] rounded-full flex flex-row justify-center items-center">
+                            <p class="text-[#2C2543] font-medium text-[14px]">
+                                11
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <p class="text-[#F4B860] font-bold text-[12px] mb-[20px]">Fri</p>
+                        <p class="text-[#667180] opacity-40 font-medium text-[14px] mb-[40px]">5</p>
+                        <p class="text-[#2C2543] font-medium text-[14px] mb-[10px]">12</p>
+                        <div class="bg-[#F8D57E] w-1 h-1 rounded-full"></div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <p class="text-[#F4B860] font-bold text-[12px] mb-[20px]">Sat</p>
+                        <p class="text-[#667180] opacity-40 font-medium text-[14px] mb-[40px]">6</p>
+                        <p class="text-[#667180] opacity-40 font-medium text-[14px] mb-[10px]">13</p>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <p class="text-[#F4B860] font-bold text-[12px] mb-[20px]">Sun</p>
+                        <p class="text-[#667180] opacity-40 font-medium text-[14px] mb-[40px]">7</p>
+                        <p class="text-[#667180] opacity-40 font-medium text-[14px] mb-[10px]">14</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -75,11 +130,11 @@
                         schedule</p>
                     <div class="flex flex-row items-end">
                         <p class="font-medium text-xl sm:text-2xl xl:text-[2.5rem] text-[#F8D57E]">Thursday 11</p>
-                        <img src="images/back.png" alt="" class="ml-5">
-                        <img src="images/front.png" alt="" class="ml-2">
+                        <img src="images/back.png" alt="" class="ml-5" style=" width:min(7vw, 25px);">
+                        <img src="images/front.png" alt="" class="ml-2" style=" width:min(7vw, 25px);">
                     </div>
                 </div>
-                <img src="./images/logo.png" alt="plus" style=" width:  min(10vw, 54.87px);">
+                <img src="./images/logo.png" alt="plus" style=" width:min(15vw, 54.87px);">
             </div>
 
             <div>
@@ -189,19 +244,55 @@
                     <p class="font-bold text-[14px] sm:text-[16px] xl:text-[18px]">Arash Ranjbaran</p>
                     <p class="font-bold text-[10px] sm:text-[12px] xl:text-[14px] text-[#F4B860]">My settings</p>
                 </div>
-                <img src="./images/profile-pic.png" alt="" style=" width: min(10vw, 60px);">
+                <img src="./images/profile-pic.png" alt="" style=" width: min(15vw, 60px);">
             </div>
 
-            <div class="mb-[19px]">
-                <img src="./images/audio-player.png" alt="" class="mx-auto w-[280px] md:w-full">
+            <div class="bg-[#F6F7FB] px-5 xl:px-7 py-5 rounded-[20px] mb-[19px]">
+                <img src="./images/minimize.png" alt="" style=" width: min(10vw, 10px);" class="ml-auto">
+
+                <div>
+                    <div class="flex flex-row items-start mb-[32px]">
+                        <img src="./images/godzila.png" alt="" style=" width: min(10vw, 45px);">
+                        <div class="ml-[20px]">
+                            <p class="font-bold text-[14px]  sm:text-[18px] text-[#2C2543]">Godzilla</p>
+                            <p class="font-medium text-[10px] sm:text-[14px] text-[#2C2543]">Eminem</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-[23px]">
+                        <div class="w-full h-[2px] bg-white rounded-lg mb-[8.5px]">
+                            <div class="w-8/12 h-[2px] bg-[#F4B860] rounded-lg">
+                            </div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <p class="font-medium text-[10px] sm:text-[12px] text-[#2C2543]">03:15</p>
+                            <p class="font-medium text-[10px] sm:text-[12px] text-[#2C2543]">00:45</p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex flex-row items-center justify-evenly">
+                        <img src="./images/shuffle.png" alt="" style=" width: min(10vw, 19.93px);"
+                            class="ml-auto hover:border border-red-500 hover:bg-yellow-300 hover:p-[1px] hover:rounded-full">
+                        <img src="./images/audio-previous.png" alt="" style=" width: min(10vw, 13.74px);"
+                            class="ml-auto hover:border border-red-500 hover:bg-yellow-300 hover:p-[1px] hover:rounded-full">
+                        <img src=" ./images/Play.png" alt="" style=" width: min(14vw, 38px);"
+                            class="ml-auto hover:border border-red-500 hover:bg-yellow-300 hover:p-[1px] hover:rounded-full">
+                        <img src=" ./images/audio-next.png" alt="" style=" width: min(10vw, 13.74px);"
+                            class="ml-auto hover:border border-red-500 hover:bg-yellow-300 hover:p-[1px] hover:rounded-full">
+                        <img src=" ./images/Loop.png" alt="" style=" width: min(10vw, 20px);"
+                            class="ml-auto hover:border border-red-500 hover:bg-yellow-300 hover:p-[1px] hover:rounded-full">
+                    </div>
+                </div>
+
             </div>
 
-            <div
-                class="flex flex-row items-start justify-between bg-[#F6F7FB] px-5 xl:px-7 py-5 rounded-[20px] mb-[19px]">
+            <div class=" flex flex-row items-start justify-between bg-[#F6F7FB] px-5 xl:px-7 py-5 rounded-[20px]
+                            mb-[19px]">
                 <div>
                     <p class="font-medium text-[30px] sm:text-[40px] mb-[23px]">8:48 AM</p>
                     <div class="flex flex-row">
-                        <img src="./images/Weather.png" alt="">
+                        <img src="./images/Weather.png" alt="" style=" width: min(10vw, 21.5px);">
                         <p class="ml-[10.5px]">Now is almost Sunny</p>
                     </div>
                 </div>
@@ -214,11 +305,14 @@
                 <p class="font-bold text-[26px] text-[#2C2543] mb-[20px]" style="line-height: 28px;">Unleash
                     the freelance
                     super power</p>
-                <p class="font-medium text-[14px] text-[#667180] mb-[8px]">Unlimited task, premium features and much
+                <p class="font-medium text-[14px] text-[#667180] opacity-40 mb-[8px]">Unlimited task, premium
+                    features
+                    and much
                     more.</p>
                 <div class="flex flex-row justify-between items-end">
-                    <img src="./images/bust.png" alt="">
-                    <img src="./images/next.png" alt="" style=" width: min(10vw, 55px);">
+                    <img src="./images/bust.png" alt="" style=" width: min(80vw, 135px);">
+                    <img src="./images/next.png" alt="" style=" width: min(10vw, 55px);"
+                        class="hover:border-2 border-[#F8D57E] hover:bg-[#F8D57E] hover:rounded-xl hover:shadow-xl">
                 </div>
             </div>
         </div>
